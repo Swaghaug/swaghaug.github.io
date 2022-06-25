@@ -1,35 +1,3 @@
-Skip to content
-Product
-Team
-Enterprise
-Explore
-Marketplace
-Pricing
-Search
-Sign in
-Sign up
-bedimcode
-/
-responsive-website-restaurant
-Public
-Code
-Issues
-1
-Pull requests
-5
-Actions
-Projects
-Wiki
-Security
-Insights
-responsive-website-restaurant/assets/js/main.js /
-@bedimcode
-bedimcode Add files via upload
-Latest commit 6fa4109 on Nov 27, 2020
- History
- 1 contributor
-107 lines (91 sloc)  4.31 KB
-
 /*==================== SHOW MENU ====================*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),

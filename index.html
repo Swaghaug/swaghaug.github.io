@@ -1,67 +1,158 @@
-<html lang="en"><head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- google fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-    <!-- fontawesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>Anne Birgite Grindhaug - Sanger - Skuespiller - Dramatiker</title>
-  </head>
-  <body>
-    <!-- home-section start  -->
-    <section background="images/home.jpg" class="home-section element-cover-bg">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg bg-transparent home-nav py-4">
-          <div class="container">
-            <!-- <a class="navbar-brand" href="#"><img src="logo_overhead.png" alt=""></a>  -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav home-menu ml-auto">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="showreel.html">Showreel</a></li>
-                <li><a href="gallery.html">Galleri</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-              </ul>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Programming portfolio for OKG</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo"></a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#projectList" class="nav__link">Project List</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Hello Work</h1>
+                        <h2 class="home__subtitle">Online portfolio of <br>projects by OKG.</h2>
+                        <a href="#projectList" class="button">View Portfolio</a>
+                    </div>
+    
+                    <img src="assets/img/geekimg.png" alt="" class="home__img">
+                </div>
+            </section>
+
+                        <!--========== Projects ==========-->
+            <section class="menu section bd-container" id="projectList">
+                <h2 class="section-title">Project List</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/python2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Immutable X - bot</h3>
+                        <span class="menu__detail">Arbitrage script for online marketplace (over 1000 objects supported).</span>
+                        <span class="menu__preci">06/25/2022</span>
+                        <a href="#" class="button menu__button">View</a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/python2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Kolumbus "next busses" app</h3>
+                        <span class="menu__detail">API to show next busses leaving from any stop in Stavanger.</span>
+                        <span class="menu__preci">06/25/2022</span>
+                        <a href="https://gist.github.com/Swaghaug/2462f24618df07dc61706ed187731fe3" class="button menu__button">View</a>
+                    </div>
+                    <div class="menu__content">
+                        <img src="assets/img/python2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Civ 6 - pick/ban - bot</h3>
+                        <span class="menu__detail">Randomly assigns civs depending on player input.</span>
+                        <span class="menu__preci">6/25/2022</span>
+                        <a href="#" class="button menu__button">View</a>
+                    </div>
+                    <div class="menu__content">
+                        <img src ="assets/img/javascriptlogo3.png" class="menu__img">
+                        <h3 class="menu__name">Memory game</h3>
+                        <span class="menu__detail">Simple pokemon style memory game.</span>
+                        <span class="menu__preci">7/19/2022</span>
+                        <a href="https://gist.github.com/Swaghaug/f1ecfda6f7408e54fb3305768a7537bb" class="button menu__button">View</a>
+                    </div>
+                    <div class="menu__content">
+                        <img src ="assets/img/javascriptlogo3.png" class="menu__img">
+                        <h3 class="menu__name">Blackjack game</h3>
+                        <span class="menu__detail">My first original project (a little ugly), but functions.</span>
+                        <span class="menu__preci">7/19/2022</span>
+                        <a href="https://gist.github.com/Swaghaug/ec2c0839b9ad5f6dced1353a7847f247" class="button menu__button">View</a>
+                    </div>
+                    <div class="menu__content">
+                        <img src ="assets/img/javascriptlogo3.png" class="menu__img">
+                        <h3 class="menu__name">Shopping List App</h3>
+                        <span class="menu__detail">Very simple add items to shopping list app.</span>
+                        <span class="menu__preci">7/19/2022</span>
+                        <a href="https://gist.github.com/Swaghaug/e13a88a0dfefc269fce59873727ca981" class="button menu__button">View</a>
+                    </div>
+                </div>
+                
             </div>
-          </div>
-        </nav>
-        <div class="home-content mx-auto text-center text-white text">
-          <h2 class="">Anne Birgitte <br> Grindhaug</h2>
-          <div class="typewriter2">
-            <div class="menu__container bd-grid"><div class="menu__content"><h4>- Sanger - </h4><h4>- Skuespiller - </h4><h4>- Dramatiker -</h4></div>
-          </div>
-        </div>
-        </div>
-        <div class="home-left text-white">
-          <p class="eng"><span>ENG</span></p>
-          <p class="eng"><span>NOK</span></p>   
-        </div>
-        <div class="home-right">
-          <ul class="pl-0">
-            <li>
-              <a href="https://www.facebook.com/annebirgitte.grindhaug"><i class="fab fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="contact.html"><i class="fab fa-google"></i></a>
-            </li>
-            <li>
-              <a href="https://instagram.com/annebirgitte97"><i class="fab fa-instagram"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- Optional JavaScript -->
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  
-</body></html>
+            </section>
+            <!--========== CONTACT ME ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact me</h2>
+                        <p class="contact__description">If you want to get in contact please refer to my email or phone number below.</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <div>
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Website creation</a></li>
+                        <li><a href="#" class="footer__link">Moral support</a></li>
+                        <li><a href="#" class="footer__link">Tutoring</a></li>
+                        <li><a href="#" class="footer__link">Bad advice</a></li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <div>
+                        <li>NO: Årvollvegen 44, 4270 Åkrehamn</li>
+                        <li>E-mail: olegrindhaug94@gmail.com</li>
+
+
+                <div class="footer__content">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <p class="footer__copy"></p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+body{
+  font-family: "Noto Sans", sans-serif, Arial;
+}
+
+
+.box-ex{
+  width: 780px;
+  background-color: #e3e3e3;
+  margin: 0 auto;
+  padding: 10px;
+}
+.box{
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin: 3px 1px;
+  display: inline-block;
+  background-color: steelblue;   
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  width: 50%;
+  position: absolute;
+  top: 20%;
+  right: 12%;
+}
+
+.box span{
+  display: inline-block;
+  vertical-align: middle;
+}
+.box-cols{
+  margin: 0 auto !important;
+}
+
+.grid {
+  display: flex;
+  flex-wrap:wrap;
+  height: 400px;
+  width: 400px;
+}

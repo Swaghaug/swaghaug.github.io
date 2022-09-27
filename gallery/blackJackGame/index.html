@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+</head>
+<body>
+<div class="content">
+    <button class="mybutton" onclick="deal()">Place Bet</button>
+        <button class="mybutton" onclick="draw()">Hit</button>
+        <button class="mybutton"  onclick="game()">Stay</button>
+    <div class="container"><span class="bigspan" id="sum-el">Your score: 0</span></div>
+    <div class="container">
+        <img id="image_1" src ="img/red_joker.png" width="150">
+        <img id="image_2" src ="img/red_joker.png" width="150">
+        <img id="image_3" width="150"src ="" >
+        <img id="image_4" width="150"src ="" >
+        <img id="image_5" width="150"src ="" >
+        
+        <p class="a" id="balance">Balance: 100</p>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+            <p class="a">Bet: <span id="demo"></span></p>
+          </div>
+        <p class="a" id="error"></p>
+    </div>
+    <div class="container">
+        <img id="imageAI_1" src ="img/red_joker.png" width="150">
+        <img id="imageAI_2" src ="img/red_joker.png" width="150">
+        <img id="imageAI_3" width="150"src ="" >
+        <img id="imageAI_4" width="150"src ="" >
+        <img id="imageAI_5" width="150"src ="" >  
+    </div>
+    <div class="container">
+        <span class="bigspan" id="sumAI-el">AI score: 0</span>
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
